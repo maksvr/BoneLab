@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoneLab</title>
+    <link rel="icon" href="./Img/log_ Bonelab.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+<div class="logo text-flicker-in-glow"><span class="text-flicker-out-glow-second">B</span>ONE <span
+                    class="text-flicker-out-glow-second">L</span>AB</div>
+<audio class="audio" controls autoplay loop id="myAudio">
+                <source src="./music/It’s Raining Tacos [Reanimated].mp3"audio>
+            </audio>
+            </header>
+
+
+
+
+
+<body>
+    <main id="main" class="section">
+        <div class="game_section">
+        <section class="game-card shadow-inset-center">
+            <img src="./Img/favourite-games/Gorilla-Tag.jpg" alt="">
+            <h2>My other game</h2>
+            <p>Gorilla Tag VR is a multiplayer virtual reality game where you play as—you guessed it—a gorilla!</p>
+            <a href="https://www.gorillatagvr.com/" class="play-button rotate-scale-up" target="_blank">Play </a>
+
+        </section>
+        <section class="game-card game_bonelab shadow-inset-center" width="800">
+            <img src="./Img/favourite-games/BONELAB.jpeg" alt="">
+            <h2>My favourite game</h2>
+            <p>Bonelab is a virtual reality (VR) game developed by Stress Level Zero. It is a follow-up to Boneworks</p>
+            <a href="https://www.stresslevelzero.com/" class="play-button rotate-scale-up" target="_blank">Play </a>
+
+        </section>
+        <section class="game-card shadow-inset-center">
+            <img src="./Img/favourite-games/3D Terarria.jpg" alt="">  
+            <h2>My other game</h2>
+            <p>Minecraft is a sandbox video game where players can build, explore, and survive .</p>
+            <a href="https://www.minecraft.net/ru-ru" class="play-button rotate-scale-up" target="_blank">Play </a>
+
+        </section>
+        <section class="game-card shadow-inset-center">
+            <img src="./Img/favourite-games/Roboloblox.jpeg" alt="">
+            <h2>My other game</h2>
+            <p>Roblox is an online platform and game creation system that allows users to create, share. It's especially popular with kids and teens.</p>
+            <a href="https://www.minecraft.net/ru-ru" class="play-button rotate-scale-up" target="_blank">Play </a>
+
+        </section>
+        <section class="game-card shadow-inset-center">
+            <img src="https://cdn.sidequestvr.com/file/496940/gunworldvr_dali_poster2.png" alt="">
+            <h2>My other game</h2>
+            <p>Gun World VR is a virtual reality sandbox shooter focused on highly physical gun interactions and customization. Here’s a breakdown</p>
+            <a href="https://vrdb.app/game/gun-world-vr/4307257289362025" class="play-button rotate-scale-up" target="_blank">Play </a>
+        </section>
+        <section class="game-card shadow-inset-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-g04jRyj9lrkgI1Vl1UZehzDgUgrWsl-BLw&s" alt="">
+            <h2>My other game</h2>
+            <p>It looks like you're asking about "deat rails" in Roblox, but that phrase seems to be a typo or a misheard term. You might be referring to</p>
+            <a href="https://deadrails.fandom.com/wiki/Main_Page" class="play-button rotate-scale-up" target="_blank">Play </a>
+        </section>
+        
+        </div>
+
+
+        <br>
+    </main>
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("myAudio");
+            audio.volume = 0.1;
+            
+            var playPromise = audio.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    
+                })
+                .catch(error => {
+                    
+                });
+            }
+        };
+    </script>
+</body>
+
+    
+
+</html>

@@ -1,3 +1,12 @@
+:root{
+  --main-bg-color:#333333;
+  --game-border-radius:8px;
+  --big-border-radius:20px;
+
+}
+
+
+
 @font-face {
   font-family: 'nasalization'; 
   src: url('./fonts/nasalization-rg.otf') format('otf'),
@@ -21,7 +30,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color:var(--main-bg-color);
   color: #fff;
   padding: 1rem;
 }
@@ -35,7 +44,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   color: orange;
-  font-family:'nasalization',sans-serif;
+  font-family:'nasalization'sans-serif
 }
 
 .menu {
@@ -66,16 +75,17 @@ main {
 
 .game-card {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: var(--game-border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1.5rem;
   width: 300px;
+  box-shadow: 2px 2px 8px 2px white;
 }
 
 .game-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius:var(--game-border-radius);
 }
 
 .game-card h2 {
@@ -91,9 +101,9 @@ main {
 
 .play-button {
   display: inline-block;
-  background-color: #333;
+  background-color:var(--main-bg-color);
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -104,7 +114,7 @@ main {
 }
 
 footer {
-  background-color: #333;
+  background-color:var(--main-bg-color);
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -123,12 +133,19 @@ footer {
 .playing {
   margin-bottom: 50px;
   text-align: center;
+  text-shadow: 2px 2px 8px black;
+  color: white;
 }
 
 .info {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.info::selection{
+  background-color: gold;
+  color: lightslategray;
 }
 
 .top_five {
@@ -153,7 +170,7 @@ footer {
 }
 
 .btn_buy {
-  padding: 10px 30px;
+  padding: 10px 30px 15px;
   background-color: rgb(0, 162, 0);
   border-radius: 5px;
 }
@@ -186,7 +203,7 @@ footer {
 
 .actividades_img{
   width: 300px;
-  border-radius: 20px;
+  border-radius:var(--big-border-radius);
 }
 
 .actividades_list{
@@ -507,7 +524,10 @@ color: #fff;
 }
 
 .game_section{
-  background-color:#333 ;
+  background-color:var(--main-bg-color);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .shadow-inset-center:hover {
@@ -715,6 +735,8 @@ color: #fff;
 
 .maps-img{
   border-radius: 21px;
+  border-top-left-radius:50px;
+  border-bottom-right-radius:50px;
 }
 
 .bonelab-text{
@@ -737,7 +759,9 @@ color: #fff;
   }
 }
 .trailer{
-  border-radius: 20px;
+  border-radius:var(--big-border-radius);
+border-top-left-radius:50px;
+  border-bottom-right-radius:50px;
 }
 
 .vibrate-1:hover {
@@ -786,4 +810,80 @@ table td {
 
 .list-bonelab{
   text-align: center;
+}
+
+.logo-section{
+  background-color: #151515;
+}
+
+.box-shadow{
+  box-shadow:2px 2px 8px 2px #fff;
+}
+
+.section{
+  background-color: #151515 !important;
+}
+
+.white-text{
+color: white;
+}
+
+.history-center{
+  text-align: center;
+    width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.more-button{
+  text-align: center;
+}
+
+.objects-center{
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.list-object{
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+  padding-left: 0;
+  list-style: none;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.list-object-img{
+  border-radius: 20px;
+}
+
+.shadow-drop-2-center:hover {
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.mod-bonelab{
+  width: 200px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.color-text{
+  color: whitesmoke;
 }
